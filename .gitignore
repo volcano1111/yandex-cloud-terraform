@@ -1,3 +1,11 @@
-**/.terraform/*
-*.tfstate
-*.tfstate.*
+.DS_Store
+.vscode
+
+vendor
+
+*.retry
+
+.terraform
+terraform.tfvars
+terraform.tfstate*
+hosts
