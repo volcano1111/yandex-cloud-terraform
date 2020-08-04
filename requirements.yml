@@ -1,0 +1,10 @@
+- name: yc_cli
+  src: teachbase-ansible.yc_cli
+
+- name: mongodb
+  src: undergreen.mongodb
+  version: v2.4.4
+
+- name: ufw
+  src: weareinteractive.ufw
+  version: 1.9.0
