@@ -1,0 +1,10 @@
+[mongo_master]
+mongodb1 ansible_host=178.154.247.113
+
+[mongo_replicas]
+mongodb2 ansible_host=178.154.246.63
+mongodb3 ansible_host=178.154.247.243
+
+[mongo:children]
+mongo_master
+mongo_replicas
