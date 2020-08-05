@@ -16,6 +16,7 @@ resource "yandex_compute_instance" "vm-1" {
   boot_disk {
     initialize_params {
       image_id = "fd8vqk0bcfhn31stn2ts"
+      size = 10
     }
   }
 
@@ -40,6 +41,7 @@ resource "yandex_compute_instance" "vm-2" {
   boot_disk {
     initialize_params {
       image_id = "fd8vqk0bcfhn31stn2ts"
+      size = 10
     }
   }
 
@@ -64,6 +66,7 @@ resource "yandex_compute_instance" "vm-3" {
   boot_disk {
     initialize_params {
       image_id = "fd8vqk0bcfhn31stn2ts"
+      size = 10
     }
   }
 
