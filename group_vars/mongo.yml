@@ -23,9 +23,9 @@ mongodb_users:
 ufw_rules:
   - { port: 22, rule: allow, from_ip: '193.150.109.220', comment: 'Allow to ssh from our ip1' }
   - { port: 22, rule: allow, from_ip: '176.116.141.0/24', comment: 'Allow to ssh from home inet provider subnet' }
-  - { port: 27017, rule: allow, from_ip: "{{ hostvars[groups['mongo'][0]].ansible_ens8.ipv4.address }}", comment: 'Allow to mongo from mongo1' }
-  - { port: 27017, rule: allow, from_ip: "{{ hostvars[groups['mongo'][1]].ansible_ens8.ipv4.address }}", comment: 'Allow to mongo from mongo2' }
-  - { port: 27017, rule: allow, from_ip: "{{ hostvars[groups['mongo'][2]].ansible_ens8.ipv4.address }}", comment: 'Allow to mongo from mongo3' }
+  - { port: 27017, rule: allow, from_ip: "{{ hostvars[groups['mongo'][0]].ansible_eth0.ipv4.address }}", comment: 'Allow to mongo from mongo1' }
+  - { port: 27017, rule: allow, from_ip: "{{ hostvars[groups['mongo'][1]].ansible_eth0.ipv4.address }}", comment: 'Allow to mongo from mongo2' }
+  - { port: 27017, rule: allow, from_ip: "{{ hostvars[groups['mongo'][2]].ansible_eth0.ipv4.address }}", comment: 'Allow to mongo from mongo3' }
   - { from_ip: '127.0.0.1/8', comment: 'Allow localhost' }
 
 ufw_default_input_policy: DROP
