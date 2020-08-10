@@ -9,3 +9,5 @@ vendor
 terraform.tfvars
 terraform.tfstate*
 hosts
+
+remove.yml
